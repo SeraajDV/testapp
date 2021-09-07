@@ -1,7 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react'
 
 function App() {
+  const [name, setName] = useState("")
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const req =  await fetch('http://localhost:8000/api')
+      const data = await req.json()
+      setName(data)
+    }
+    fetchData()
+  },[])
   return (
     <div className="App">
       <h1>{name}</h1>
