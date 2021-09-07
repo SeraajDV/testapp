@@ -12,7 +12,7 @@ app.use(express.json())
 app.use(cors())
 
 app.get('/api', (req, res) => {
-  res.send(person.name)
+  res.send(person)
 })
 
 if(process.env.NODE_ENV === 'production'){

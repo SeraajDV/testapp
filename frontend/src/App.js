@@ -7,7 +7,7 @@ function App() {
     const fetchData = async () => {
       const req =  await fetch('http://localhost:8000/api')
       const data = await req.json()
-      setName(data)
+      setName(data.name)
     }
     fetchData()
   },[])
