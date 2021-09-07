@@ -1,0 +1,24 @@
+{
+  "name": "testapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "heroku-postbuild": "cd frontend && npm install && npm install --onlydev --no-shrinkwrap && npm build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeraajDV/testapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeraajDV/testapp/issues"
+  },
+  "homepage": "https://github.com/SeraajDV/testapp#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
